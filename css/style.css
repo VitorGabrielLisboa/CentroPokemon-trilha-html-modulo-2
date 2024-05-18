@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    flex: 1;
+}
+.main {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: #f8f9f9;
+    padding: 10px 20px 0px;
+    text-align: center;
+}
+.menu h1{
+    width: 100%;
+    border-bottom: 2px solid #e1e1e1;
+    padding: 0.8rem 0;
+    display: inline-block;
+}
+.menu ul{
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    align-items: center;
+}
+.menu ul li{
+    align-items: center;
+    margin: 15px 0;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #777;
+    transition: all .2s ease;
+
+}
+.menu ul li a:hover{
+    color: crimson;
+    font-weight: bolder;
+}
+.header {
+    background: white;
+    min-height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    z-index: 1;
+}
+.header img{
+    min-width: 40px;
+    max-width: 70px;
+    margin: 25px 30px;
+}
+.header h1{
+    align-self: center;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+.content {
+    background-color: white;
+    flex: 1;
+    padding: 20px;
+}
+.container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+.container .text h1 span{
+    color: crimson;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+.container .img img{
+    width: 450px;
+}
+.footer {
+    background-color: #e0e0e0;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer label{
+    font-size: 0.5rem;
+}
+table{
+    width: 500px;
+}
+table tr th{
+    background: crimson;
+    color: #f1f1f1;
+    border-spacing: 0;
+}
+table tr td{
+    text-align: center;
+}
+
+.contact{
+    margin-left: 60px;
+    font-size: 0.8rem;
+    width: 350px;
+    height: 310px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+form h2{
+    margin: 15px 10px;
+}
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+form textarea{
+    padding: 8px;
+    margin: 7px;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    border: 1px solid #222;
+}
+form input::placeholder,
+form textarea::placeholder{
+    font-weight: bolder;
+}
+form input{
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #222;
+    outline: none;
+    cursor: pointer;
+}
+form .btn-box{
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+
+}
+.btn-box button{
+    padding: 10px;
+    margin: 0 5px;
+    background: none;
+    outline: none;
+    border: solid 2px crimson;
+    border-radius: 5px;
+    color: crimson;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn-box button:hover{
+    background: crimson;
+    color: #f1f1f1;
+}
+form input:hover,
+form textarea:hover,
+form textarea:focus,
+form input:focus{
+    border: 1.5px solid crimson;
+}
+form input:hover::placeholder,
+form textarea:hover::placeholder{
+    color: crimson;
+
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
